@@ -652,7 +652,7 @@ void st7789_state(int state)
 
   uint8_t linebuffer[2*240];
 
-#if defined(_P8_NRF52832_H) || defined(_K9_NRF52832_H)
+#if defined(_P8_NRF52832_H) || defined(_P8B_NRF52832_H) || defined(_K9_NRF52832_H)
   // 1-bit RLE, generated from res/p8dfu.png, 1355 bytes
   static const uint8_t rle[] = {
     0xff, 0x0, 0xff, 0x0, 0xff, 0x0, 0xff, 0x0, 0xff, 0x0, 0xff, 0x0,
